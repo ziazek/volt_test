@@ -6,7 +6,7 @@ Volt.configure do |config|
   #######################################
   config.domain = 'volt-test.com'
   config.app_name = 'Volt_test'
-  config.mailer.from = 'Volt_test <no-reply@volt-test.com>'
+  config.mailer.from = 'Volt_test <ziazek@gmail.com>'
 
   ############
   # App Secret
@@ -36,10 +36,10 @@ Volt.configure do |config|
   # Database config all start with db_ and can be set either in the config
   # file or with an environment variable (DB_NAME for example).
 
-  # config.db_driver = 'mongo'
-  # config.db_name = (config.app_name + '_' + Volt.env.to_s)
-  # config.db_host = 'localhost'
-  # config.db_port = 27017
+  config.db_driver = 'mongo'
+  config.db_name = (config.app_name + '_' + Volt.env.to_s)
+  config.db_host = 'localhost'
+  config.db_port = 27017
 
   #####################
   # Compression options

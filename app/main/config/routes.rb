@@ -5,6 +5,7 @@ client '/about', action: 'about'
 # Routes for login and signup, provided by user_templates component gem
 client '/signup', component: 'user_templates', controller: 'signup'
 client '/login', component: 'user_templates', controller: 'login'
+client '/todos', action: 'todos'
 
 # The main route, this should be last. It will match any params not
 # previously matched.
